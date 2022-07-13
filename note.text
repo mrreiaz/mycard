@@ -11,5 +11,81 @@ The runApp() function takes the given Widget and makes it the root of the widget
 
 runApp() function এর মধ্যে যে Widget কে দেওয়া হবে , ঐ টা কে সে রুট বানাইফেলবে এবং app রান করলে ঐ widget ই রান হবে। 
 
+what is Containr Widgets ?
+https://docs.flutter.dev/development/ui/widgets
+check this 
+
+এখন আমার কাজ হচ্চছে Layout widgets সম্পর্কে জানা 
+
+Layout widgets কে use করা হয়ে অন্য widget কে Arrange করার জন্য , মনে হইল screen এর কোথায় কি থাকবে সেটা সেট করার জন্য । 
+
+Arrange other widgets columns, rows, grids, and many other layouts.
+
+সাধারণত ৩ রমক layout widgets রয়েচছে 
+১. Single-child layout widgets
+২. Multi-child layout widgets
+৩. Sliver widgets
+
+
+what is container widget in flutter ? 
+
+Container class in flutter is a convenience widget that combines common painting, positioning, and sizing of widgets. A Container class can be used to store one or more widgets and position them on the screen according to our convenience. Basically, a container is like a box to store contents.
+
+ভাই আপনি বলছেন আমি বিসশ্বাস করি না । তা হলে আপনি  
+
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MyApp()
+  );
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return 
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.teal,
+        body: Container(
+          color: Colors.white,
+        ),
+      ),
+    ); 
+  }
+}
+
+
+এই কোড টা রান করে দেখেন। 
+
+আমি Scaffold এর backgroundColor দিয়েছি teal এবং Container এর কালার দিয়েছি White কিন্তু দেখেন পরা অ্যাপ এর রঙ সাদধা হয়ে গেছে।
+কিন্তু মজার ব্যাপার হচ্চছে আমারা যদি container এর মধ্যে কোন চাইল্ড নেই তা হলে শুদধু মাত্র চাইল্ডের কালার ই পরিবরর্তন হবে। 
+
+খেয়াল করেলে দেখবেন একখন container এর মদধ্যে কোন কিচছচু রাকখলে তা AppBar এর নিচে চলে যায়। 
+এই প্রবলেম এর সমাদধান কি ?
+ এর সমাদধান হচ্চছে safearea widget use করা। 
+
+
+
+আমারা চাইলে container এর height and width ও সেট করে দিতে পারি 
+
+container এর কেবল মাত্র ১টা child ই থাকতে পারে আমারা চাইলে এর বেশি child রাকখতে পারব না । 
+ goto this link to know more about single-child layout widget 
+
+ https://docs.flutter.dev/development/ui/widgets/layout#Single-child%20layout%20widgets
+
+
+
+
+
+
+
+
+
+
+
 
 
