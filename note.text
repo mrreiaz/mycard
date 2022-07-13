@@ -1,0 +1,15 @@
+Hot relode.
+
+The hot reload feature allows you to quickly and easily perform an experiment in the project. It helps to build UI, add new features, fix bugs, and make app development fast.
+
+But hot relode only work with statefulwidget or statelesswidget
+
+
+what is runApp() ?
+
+The runApp() function takes the given Widget and makes it the root of the widget tree. In this example, the widget tree consists of two widgets, the Center widget and its child, the Text widget.
+
+runApp() function এর মধ্যে যে Widget কে দেওয়া হবে , ঐ টা কে সে রুট বানাইফেলবে এবং app রান করলে ঐ widget ই রান হবে। 
+
+
+
