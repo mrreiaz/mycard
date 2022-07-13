@@ -78,6 +78,39 @@ container এর কেবল মাত্র ১টা child ই থাকত�
  https://docs.flutter.dev/development/ui/widgets/layout#Single-child%20layout%20widgets
 
 
+ Multi-child layout widgets
+
+column উপর থেকে নিছের দিকে widget 
+using verticalDirection we can change কলামের ভিতরে থাকা widget এর পজিসশন 
+mainAxisAlignment use করে পরো কলামের পজিসশন চেইনজ করা যায়। 
+
+container এর width double.infinity করে দিলে ঐ container এর সাইজ পরা screen এর সমান হয়ে যাবে। 
+
+কিন্তু যদি colum এর 
+crossAzisAlignment.stretch করে দেই ত হলে ওই colum এর সব কিচছু ই পুরা screen এর সমান হয়ে যাবে। 
+
+what is SizedBox() ? 
+SizedBox is a built-in widget in flutter SDK. It is a simple box with a specified size. It can be used to set size constraints to the child widget, put an empty SizedBox between the two widgets to get some space in between.
+
+সুজা বাংলায় বল্লে হয় , ২ টা জিনিসের  মদধ্যে পাকা রাকখার জন্য SizedBox কে use করা হয়। 
+
+column এর সব কিচু ই row এর জন্য apply করা যায় , 
+শুধু মাত্র row , widget ঘুলোকে পাসশা পাসশি রাকখে। 
+
+row  পাশা পাশি   widget 
+
+To know more about flutter layout  read this artical. 
+
+https://medium.com/flutter-community/flutter-layout-cheat-sheet-5363348d037e
+
+
+
+
+
+
+
+
+
 
 
 
