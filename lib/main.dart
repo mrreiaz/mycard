@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
                 radius: 50.0,
@@ -40,54 +41,103 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 3.0,
                 ),
               ),
-              Container(
+
+              SizedBox(
+                height: 20.0,
+                width: 150.0,
+                child: Divider(color: Colors.teal.shade100),
+              ),
+
+              // Card(
+              //   color: Colors.white,
+              //   margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+              //   child: Padding(
+              //     padding: const EdgeInsets.all(8.0),
+              //     child: Row(
+              //       children: [
+              //         Icon(
+              //           Icons.phone,
+              //           color: Colors.black54,
+              //         ),
+              //         Text(
+              //           "+8107021656683",
+              //           style: TextStyle(
+              //             fontFamily: 'sanspro',
+              //             fontSize: 15.0,
+              //             color: Colors.black54,
+              //             fontWeight: FontWeight.bold,
+              //             letterSpacing: 3.0,
+              //           ),
+              //         ),
+              //       ],
+              //     ),
+              //   ),
+              // ),
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal:25.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      color: Colors.black54,
+                margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    '07021656683',
+                    style: TextStyle(
+                      color: Colors.teal,
+                      fontFamily: 'sanspro',
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 3.0,
                     ),
-                    Text(
-                      "+8107021656683",
-                      style: TextStyle(
-                        fontFamily: 'sanspro',
-                        fontSize: 15.0,
-                        color: Colors.black54,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 3.0,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
 
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0,horizontal:25.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      color: Colors.black54,
+                margin: EdgeInsets.symmetric(vertical: 8.0, horizontal: 25.0),
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.teal,
+                  ),
+                  title: Text(
+                    'reiazbubt@gmail.com',
+                    style: TextStyle(
+                      color: Colors.teal,
+                      fontFamily: 'sanspro',
+                      fontWeight: FontWeight.bold,
+                      letterSpacing: 3.0,
                     ),
-                    SizedBox(width: 10.0,),
-                    Text(
-                      "reiazbubt@gmail.com",
-                      style: TextStyle(
-                        fontFamily: 'sanspro',
-                        fontSize: 15.0,
-                        color: Colors.black54,
-                        fontWeight: FontWeight.bold,
-                        letterSpacing: 3.0,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
+              //   Card(
+              //     color: Colors.white,
+              //     margin: EdgeInsets.symmetric(vertical: 10.0,horizontal:25.0),
+              //     child: Padding(
+              //       padding: const EdgeInsets.all(8.0),
+              //       child: Row(
+              //         children: [
+              //           Icon(
+              //             Icons.email,
+              //             color: Colors.black54,
+              //           ),
+              //           SizedBox(width: 10.0,),
+              //           Text(
+              //             "reiazbubt@gmail.com",
+              //             style: TextStyle(
+              //               fontFamily: 'sanspro',
+              //               fontSize: 15.0,
+              //               color: Colors.black54,
+              //               fontWeight: FontWeight.bold,
+              //               letterSpacing: 3.0,
+              //             ),
+              //           ),
+              //         ],
+              //       ),
+              //     ),
+              //   ),
             ],
           ),
         ),
